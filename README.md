@@ -1,2 +1,7 @@
 # ugc_cinema
-ugc_cinema
+
+
+- PHP
+- MYSQL
+- BOOTSTRAP
+- HTML/CSS
