@@ -61,7 +61,9 @@
 					    <tbody>
                         <?php foreach ($films as $film) { ?>
 						    <tr>
-							    <td  <img alt="" width="30" height="30" src="<?php echo '../../assets/images/films/' . $film['affiche']; ?>"> </td>
+							    <td>
+							        <img alt="" width="30" height="30" src="<?php echo '../../assets/images/films/' . $film['affiche']; ?>">
+							    </td>
 							    <td> <?= $film['titre'] ?> </td>
 							    <td> <?= $film['auteur'] ?> </td>
 							    <td> <?= $film['dateSortir'] ?> </td>
