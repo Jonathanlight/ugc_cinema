@@ -16,9 +16,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="profil.php">
+            <a class="nav-link" href="list_user.php">
               <span data-feather="users"></span>
-              Profil
+              utilisateurs
             </a>
           </li>
           <li class="nav-item">

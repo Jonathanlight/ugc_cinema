@@ -13,6 +13,8 @@ $data = [
     'message' => ''
 ];
 
+$destination_path = '../../assets/images/films/';
+
 // fonction pour verifier les valeurs envoyer en POST
 function validateForm($value) {
     if (!isset($value)) {
