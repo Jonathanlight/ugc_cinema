@@ -1,13 +1,10 @@
 <?php
+session_start(); // Demarrage de la session
 
-// Demarre la session
-session_start();
-
-// Session pour l'identification des utilisateurs
 if (!isset($_SESSION['id'])) {
-    $_SESSION['id'] = null;
-    $_SESSION['username'] = null;
-    $_SESSION['role'] = null;
+	$_SESSION['id'] = null;
+	$_SESSION['username'] = null;
+	$_SESSION['role'] = null;
 }
 
 // pour les messages d'erreurs

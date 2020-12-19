@@ -1,3 +1,13 @@
+<?php include_once '../../functions/parameters.php'; ?>
+<?php include_once '../../functions/database.php'; ?>
+
+<?php
+
+	if ( $_SESSION['id'] == null) {
+		header('Location: ../../login.php');
+	}
+
+?>
 
 <!doctype html>
 <html lang="en">
@@ -9,13 +19,14 @@
     <meta name="generator" content="Jekyll v4.1.1">
     <title>Dashboard Template · Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap core CSS -->
-<link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Favicons -->
-<link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <!-- Favicons -->
+    <link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -43,7 +54,7 @@
   </button>
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link btn btn-danger" href="#"> <i class:="fas fa-power-off"></i> Deconnexion</a>
+      <a class="btn btn-danger" href="../../functions/logout.php"> <i class="fa fa-power-off"></i> Deconnexion</a>
     </li>
   </ul>
 </nav>
